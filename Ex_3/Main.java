@@ -30,7 +30,7 @@ public class Main {
         while (lensArray.size() > 1) {
             // Если значение текущей линзы равно значению следующей или меньше его на единицу, то они образуют пару,
             // соответственно нужно выбросить оба значения
-            if (Objects.equals(lensArray.get(0), lensArray.get(1)) || Objects.equals(lensArray.get(0) + 1, lensArray.get(1))) {
+            if (Objects.equals(lensArray.get(0), lensArray.get(1)) || Objects.equals(lensArray.get(0) + 1, lensArray.get(1)) || Objects.equals(lensArray.get(0) + 2, lensArray.get(1))) {
                 lensArray.remove(1);
             }
             // Если пары нет, то в любом случае значение удаляется, а счетчик увеличивается
