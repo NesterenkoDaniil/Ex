@@ -37,7 +37,7 @@ public class Main {
         int paid = in.nextInt();
 
         // Сумма сдачи
-        int payback = cost - paid;
+        int payback = paid - cost;
 
         // Печать сдачи для каждой из купюр
         for (int i : paybackNominals) {
